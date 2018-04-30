@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-dynare-reference-manual",
+        "command": "dynare-reference-manual:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Dynare Manual",
+          "submenu": [
+            {
+              "label": "Show",
+              "command": "atom-dynare-reference-manual:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
