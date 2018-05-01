@@ -1,17 +1,13 @@
 'use babel';
 
-export default class AtomDynareReferenceManualView {
+export default class AtomDynareManualView {
 
   constructor(serializedState) {
     // Create root element
     this.element = document.createElement('div');
-    this.element.classList.add('atom-dynare-reference-manual');
+    this.element.classList.add('atom-dynare-manual');
 
-    // Create message element
-    const message = document.createElement('div');
-    message.textContent = 'hello';
-    message.classList.add('message');
-    this.element.appendChild(message);
+    //const disposable = atom.tooltips.add(div, {title: 'This is a tooltip'})
   }
 
   // Returns an object that can be retrieved when package is activated
@@ -20,10 +16,12 @@ export default class AtomDynareReferenceManualView {
   // Tear down any state and detach
   destroy() {
     this.element.remove();
+    this.subscriptions.dispose();
   }
 
   getElement() {
     return this.element;
   }
+
 
 }

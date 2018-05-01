@@ -1,0 +1,30 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-dynare-manual",
+        "command": "atom-dynare-manual:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Dynare Manual",
+          "submenu": [
+            {
+              "label": "Online Help",
+              "command": "atom-dynare-manual:toggle"
+            },
+            {
+              "label": "Offline Help",
+              "command": "atom-dynare-manual:offline"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

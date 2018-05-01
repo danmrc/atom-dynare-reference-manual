@@ -1,0 +1,19 @@
+{
+  "name": "atom-dynare-manual",
+  "main": "./lib/atom-dynare-manual",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": ["atom-dynare-manual:toggle","atom-dynare-manual:offline"]
+  },
+  "repository": "https://github.com/atom/atom-dynare-manual",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "browser-plus":"ˆ0.0.98"
+  }
+}
